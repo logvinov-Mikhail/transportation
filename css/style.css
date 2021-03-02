@@ -13,7 +13,7 @@ a{
 }
 
 .container{
-    max-width: 1220px;
+    max-width: 1320px;
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -23,4 +23,35 @@ body{
     font-weight: 400;
     line-height: 21px;
     color: #333;
+}
+
+.header{
+    background-color: #FED100;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.menu__btn{
+    display: none;
+}
+.menu__list{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu__list-link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #333;
+}
+.phone{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #333;
+    border-bottom: 1px solid #333;
 }

@@ -23,11 +23,9 @@ body{
     font-weight: 400;
     line-height: 21px;
     color: #333;
-}
-
-.header{
     background-color: #FED100;
 }
+
 .header__inner{
     display: flex;
     justify-content: space-between;
@@ -42,6 +40,12 @@ body{
     justify-content: space-between;
 }
 .menu__list-link{
+    transition: all .5s;
+}
+.menu__list-link:hover{
+    border-bottom: 2px solid #333;
+}
+.menu__list-link{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -50,8 +54,81 @@ body{
 }
 .phone{
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 28px;
     color: #333;
     border-bottom: 1px solid #333;
+}
+
+.top__heading{
+    position: relative;
+}
+.top__content{
+    width: 50%;
+    padding-top: 75px;
+}
+.top__title{
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px; 
+}
+.top__title--location{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38px;
+    
+    padding: 10px 0 45px;
+}
+.order__btn{
+    font-size: 24px;
+    color: #fefefe;
+    background-color: #FF352B;
+    width: 300px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+    padding: 18px 10px; 
+    transition: all .5s;
+    border: 1px solid transparent; 
+}
+.top__bottom{
+    padding: 80px 0 90px;
+    width: 550px;
+
+}
+.top__items{
+    display: flex;
+}
+.top__item{
+    display: flex;
+    justify-content: space-between;
+}
+.top__item-text{
+    padding-left: 10px;
+}
+.top__photo{
+    position: absolute;
+}
+.top__photo--working{
+    top: 18px;
+    left: 600px;
+    z-index: 5;
+}
+.top__photo--van{
+    top: 105px;
+    right: -100px;
+    z-index: 4;
+}
+
+.happen{
+    background-color: #fefefe;
+}
+.phone__btn{
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    transition: all .5s;
+}
+.phone__btn:hover{
+    transform: scale(1.15);
 }

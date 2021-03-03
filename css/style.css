@@ -79,6 +79,9 @@ body{
     
     padding: 10px 0 45px;
 }
+.order{
+    position: relative;
+}
 .order__btn{
     font-size: 24px;
     color: #fefefe;
@@ -90,7 +93,6 @@ body{
     padding: 18px 10px; 
     transition: all .5s;
     border: 1px solid transparent; 
-    position: relative;
     z-index: 56;
 }
 
@@ -102,12 +104,11 @@ body{
     border: 2px solid #fefefe;
     top: 10px;
     left: 10px;
-    z-index: 1;
+    z-index: -1;
 }
 .top__bottom{
     padding: 80px 0 90px;
     width: 550px;
-
 }
 .top__items{
     display: flex;
@@ -130,11 +131,7 @@ body{
 .top__photo--van{
     top: 105px;
     right: -100px;
-    z-index: 4;
-}
-
-.happen{
-    background-color: #fefefe;
+    z-index: -1;
 }
 .phone__btn{
     position: absolute;
@@ -144,4 +141,47 @@ body{
 }
 .phone__btn:hover{
     transform: scale(1.15);
+}
+
+.happen{
+    background-color: #fefefe;
+    padding-top: 95px;
+}
+.happen__title{
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.happen__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.happen__item{
+    width: 550px;
+    padding: 0 0 70px 100px;
+    position: relative;
+}
+.happen__item-num{
+    position: absolute;
+    top: 11px;
+    left: 0;
+    font-size: 50px;
+    text-shadow: 1px 0px #FED100;
+}
+/* .happen__item-num::after{
+    content: "";
+    border: 1px solid #FED100;
+} */
+.happen__item-title{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.happen__item-text{
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 400px;
 }

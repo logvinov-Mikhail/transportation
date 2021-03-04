@@ -293,17 +293,27 @@ body{
 }
 
 .truck__slider{
-
+    display: flex;
+    flex-wrap: wrap;
 }
 .truck__slider-item{
     display: flex;
     align-items:center
+}
+.top__slider-content{
+    width: 50%;
+}
+.truck__slider-images{
+    width: 50%;
 }
 .truck__slider-title{
     font-size: 24px;
     font-weight: 600;
     line-height: 28px;
     padding-bottom: 35px;
+}
+.slider__btn{
+    margin: 20px 0;
 }
 .slider__list{
 

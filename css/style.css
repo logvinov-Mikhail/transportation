@@ -303,7 +303,7 @@ body{
 .top__slider-content{
     width: 50%;
 }
-.truck__slider-images{
+.truck__slider-img{
     width: 50%;
 }
 .truck__slider-title{
@@ -321,4 +321,17 @@ body{
 .slider__list-item{
     padding: 12px 0px 12px 50px;
     list-style: none;
+}
+.slick-arrow{
+    border: none;
+    /* outline: none; */
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    cursor: pointer;
+}
+.slick-next{
+    right: 20px;
 }

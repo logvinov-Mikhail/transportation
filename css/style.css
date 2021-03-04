@@ -87,6 +87,11 @@ body{
 }
 .order{
     position: relative;
+    z-index: 56;
+}
+.top__order{
+    position: relative;
+    z-index: 56;
 }
 .order__btn{
     font-size: 24px;
@@ -99,7 +104,11 @@ body{
     padding: 18px 10px; 
     transition: all .5s;
     border: 1px solid transparent; 
-    z-index: 56;
+    transition: background-color 0.5s ease;
+}
+.order__btn:hover, 
+.order__btn:focus {
+    background-color: #ff5047;
 }
 
 .order__btn::after{
@@ -151,18 +160,20 @@ body{
 
 .happen{
     background-color: #fefefe;
-    padding-top: 95px;
+    padding-top: 100px;
 }
-.happen__title{
+.truck__title{
     font-size: 30px;
     line-height: 36px;
+    font-weight: 700;
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 15px;
 }
 .happen__inner{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-top: 35px;
 }
 .happen__item{
     width: 550px;
@@ -188,21 +199,116 @@ body{
     line-height: 18px;
     max-width: 400px;
 }
-
-.prise__title{
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    text-align: center;
+.prise{
+    padding: 50px 0;
 }
-.prise__title-text{
+.truck__title-text{
     font-size: 24px;
     font-weight: 600;
     line-height: 28px;
     text-align: center;
-    padding: 15px 0 60px;
+    padding: 0 0 60px;
 }
 .prise__inner{
     display: flex;
     justify-content: space-between;
+    text-align: center;
+}
+.prise__item{
+    border: 1px solid #333;
+    width: 420px;
+    height: 580px;
+    transition: 0.5s ease;
+}
+.prise__item:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 10px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #FED100;
+    transform: scale(1.05);
+}
+.prise__item-title{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 80px 0 60px;
+}
+.prise__list-item{
+    list-style: none;
+    line-height: 50px;
+}
+.prise__sum{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    padding: 30px 0 40px;
+}
+.prise__btn{
+    background-color: #FED100;
+    color: #333;
+    display: flex;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+}
+.prise__btn:hover, 
+.prise__btn:focus {
+    background-color: #ffe15b;
+}
+.top__slider-content{
+    padding-right: 110px;
+}
+
+.carPark{
+    padding: 50px 0;
+}
+.carPark-btn{
+    text-align: center;
+    padding-bottom: 45px;
+}
+.carPark-btn-item{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+    display: inline-block;
+    width: 200px;
+    padding: 13px;
+    margin: 0 10px;
+    color: #333;
+    border: 1px solid #333;
+    transition: border 0.2s ease;
+}
+.carPark-btn-item:hover, 
+.carPark-btn-item:focus {
+    border: 1px solid #FED100;
+}
+
+.truck__slider{
+
+}
+.truck__slider-item{
+    display: flex;
+    align-items:center
+}
+.truck__slider-title{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    padding-bottom: 35px;
+}
+.slider__list{
+
+}
+.slider__list-item{
+    padding: 12px 0px 12px 50px;
+    list-style: none;
 }

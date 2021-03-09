@@ -146,7 +146,7 @@ body{
 .top__photo--van{
     top: 105px;
     right: -100px;
-    z-index: -1;
+    z-index: 1;
 }
 .phone__btn{
     position: absolute;
@@ -378,6 +378,10 @@ body{
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
+.reviews__btn:hover, 
+.reviews__btn:focus {
+    background-color: #e6bb00;
+}
 
 
 .feedback{
@@ -496,7 +500,7 @@ body{
 }
 
 .footer{
-    padding: 100px 0 0;
+    padding: 100px 0;
     background-color: #FED100;
 }
 .footer__inner{
@@ -533,7 +537,7 @@ body{
 .footer__social-email, .footer__feedback-phone{
     font-size: 20px;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 38px;
     color: #333;
     border-bottom: 1px solid #333;
 }
@@ -555,4 +559,14 @@ body{
     line-height: 24px;
     cursor: pointer;
     transition: background-color 0.2s ease;
+}
+.footer__feedback-btn:hover, 
+.footer__feedback-btn:focus {
+    background-color: #e6bb00;
+}
+
+/* АДАПТИВ */
+@media (max-width: 1140px){
+
+    
 }

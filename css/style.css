@@ -491,7 +491,68 @@ body{
     background-image: url(../images/checkIcon-yellow.svg);
 
 }
-
 .social{
     text-align: end;
+}
+
+.footer{
+    padding: 100px 0 0;
+    background-color: #FED100;
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__agreement{
+    display: flex;
+    flex-direction: column;
+    max-width: 240px;
+}
+.agreement__link{
+    padding-top: 35px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #333;
+}
+.footer__menu-item{
+    padding-bottom: 10px;
+}
+.footer__menu-link{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #333;
+    padding-bottom: 10px;
+}
+.footer__social-list{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.footer__social-email, .footer__feedback-phone{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #333;
+    border-bottom: 1px solid #333;
+}
+.footer__feedback{
+    text-align: center;
+}
+.footer__feedback-btn{
+    color: #333;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid #333;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }

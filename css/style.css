@@ -145,7 +145,7 @@ body{
 }
 .top__photo--van{
     top: 105px;
-    right: -100px;
+    left: 56vw;
     z-index: 1;
 }
 .phone__btn{
@@ -211,12 +211,13 @@ body{
 }
 .prise__content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
+    flex-wrap: wrap;
 }
 .prise__item{
     border: 1px solid #333;
-    width: 420px;
+    width: 410px;
     height: 580px;
     transition: 0.5s ease;
 }
@@ -566,7 +567,141 @@ body{
 }
 
 /* АДАПТИВ */
-@media (max-width: 1140px){
+@media (min-width: 1600px){
+    .top__photo--van{
+        left: 70%;
+    }
+}
+@media (max-width: 1320px){
+    .prise__item{
+        width: 30%;
+    }
+}
+@media (max-width: 1200px){
+    .top__photo--van, .phone__btn{
+        display: none;
+    }
+    .top__photo--working {
+        left: 57vw;
+    }
+}
 
-    
+@media (max-width: 940px){
+    .top__bottom{
+        display: none;
+    }
+    .top__content{
+        margin: 0 auto;
+        text-align: center;
+        width: auto;
+        max-width: 550px;
+    }
+    .top__photo--working {
+        position: static;
+    }
+    .order__btn::after{
+        display: none;
+    }
+
+    .top__title--location{
+        padding: 10px 0;
+    }
+    .top__heading{
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    .top__order{
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        right: 0;
+    }
+    .top__photo--working{
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    .prise__item{
+        min-width: 300px;
+        margin: 50px 10px 0;
+    }
+    .
+}
+
+@media (max-width: 860px){
+    .phone, .menu__list {
+        display: none;
+    }
+    .menu__btn{
+        display: block;
+        cursor: pointer;
+        width: 35px;
+        height: 24px;
+        border: none;
+        border-top: 3px solid #333;
+        border-bottom: 3px solid #333;
+        background-color: transparent;
+        position: relative;
+    }
+    .menu__btn::before{
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 2px;
+        background-color: #333;
+        left: 0;
+        top: 8px;
+    }
+}
+
+@media (max-width: 860px){
+    .truck__title-text{
+        display: none;
+    }
+    .prise__content{
+        display: block;
+    }
+    .prise__item{
+        margin: 25px auto;
+        width: 420px;
+    }
+}
+
+@media (max-width: 510px){
+    .top__title{
+        font-size: 38px;
+        line-height: 48px;
+    }
+    .top__title--location{
+        font-size: 24px;
+    }
+    .top__photo--working{
+        width: 90vw;
+    }
+    .happen{
+        padding-top: 40px;
+    }
+    .happen__item{
+        padding: 0 0 25px 80px;
+        height: 88px;
+    }
+    .happen__item-title{
+        font-size: 16px;
+    }
+    .truck__title{
+        font-size: 24px;
+    }
+    .happen__item-text{
+        display: none;
+    }
+    .prise__item{
+        margin: 25px auto;
+        border: none;
+        width: auto;
+    }
+    .prise__item:hover {
+        box-shadow: none;
+        border: none;
+        background-color: #F8FBFF;
+        transform: scale(1.05);
 }

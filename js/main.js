@@ -8,6 +8,13 @@ $(function(){
         autoplay: false,
         fade: true,
         responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                dots: true,
+                arrows: false
+                }
+            }
 
         ]
     });

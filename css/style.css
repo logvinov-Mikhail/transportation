@@ -584,6 +584,36 @@ body{
     .top__photo--working {
         left: 57vw;
     }
+
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        text-align: center;
+    }
+    .slick-dots button{
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        background-color: #333;
+        border: none;
+        border-radius: 50%;
+        padding: 0;
+    }
+    .slick-active button{
+        width: 16px;
+        height: 16px;
+    }
+    .slick-active button:focus{
+        text-decoration: none;
+        border: none;
+    }
+    .slick-dots li{
+        padding-left: 10px;
+    }
+    .truck__slider-content{
+        padding: 50px 30px;
+    }
 }
 
 @media (max-width: 940px){
@@ -624,8 +654,7 @@ body{
     .prise__item{
         min-width: 300px;
         margin: 50px 10px 0;
-    }
-    .
+    }   
 }
 
 @media (max-width: 860px){
@@ -652,9 +681,6 @@ body{
         left: 0;
         top: 8px;
     }
-}
-
-@media (max-width: 860px){
     .truck__title-text{
         display: none;
     }
@@ -664,6 +690,36 @@ body{
     .prise__item{
         margin: 25px auto;
         width: 420px;
+    }
+
+    .slick-initialized .slick-slide{
+        display: block;
+        text-align: center;
+    }
+    .truck__slider-content{
+        width: 100%;
+        padding: 0;
+    }
+    .slider__list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .slider__list-item{
+        width: 50%;
+    }
+    .slider__btn{
+        margin: 20px auto;
+    }
+    .truck__slider-img{
+        width: 100%;
+    }
+    .slick-slide img{
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .carPark-btn-item{
+        margin-bottom: 30px;
     }
 }
 
@@ -703,5 +759,6 @@ body{
         box-shadow: none;
         border: none;
         background-color: #F8FBFF;
-        transform: scale(1.05);
+        transform: scale(1.05)
+    }
 }

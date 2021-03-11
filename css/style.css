@@ -678,7 +678,11 @@ body{
     .happen{
         padding-top: 50px;
     }
-    .carPark-btn,
+    .carPark-btn{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+    }
     .carPark,
     .prise{
         padding: 25px 0;
@@ -689,11 +693,11 @@ body{
         font-size: 16px;
         font-weight: 400;
         width: auto;
+        padding: 0;
     }
     .carPark-btn-item:hover,
     .carPark-btn-item:focus{
         border: none;
-        font-weight: 700;
         border-bottom: 1px solid #FED100;
     }
     .slick-slide{

@@ -9,14 +9,35 @@ $(function(){
         fade: true,
         responsive: [
             {
-                breakpoint: 1200,
-                settings: {
-                dots: true,
-                arrows: false
-                }
+              breakpoint: 1200,
+              settings: {
+              dots: true,
+              arrows: false
+              }
             }
 
         ]
     });
+});
+
+
+$(window).resize(function() {
+  if ( $(window).width() < 860){
+    $('.block-test').addClass("block__hidden");
+  } else {
+    $('.block-test').removeClass("block__hidden");
+  }
+});
+
+$('.one').click(function(){
+  $('.block__hidden').css("display", "block");
+  $('.one').css("display", "none");
+  $('.off').css("display", "block");
+});
+
+$('.off').click(function(){
+  $('.block__hidden').css("display", "none");
+  $('.one').css("display", "block");
+  $('.off').css("display", "none");
 });
 

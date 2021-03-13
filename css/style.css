@@ -369,6 +369,24 @@ body{
 .reviews__btn:focus {
     background-color: #e6bb00;
 }
+.reviws__btn--more{
+    color: #333;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid #333;
+    background-color: #FED100;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
 
 .feedback{
     padding: 100px 0 60px;
@@ -446,7 +464,7 @@ body{
     z-index: 333;
     padding: 40px;
     top: 150px;
-    left: 25vw;
+    right: 54vw;
 
     display: flex;
     flex-direction: column;
@@ -710,7 +728,7 @@ body{
     .carPark-btn{
         display: flex;
         justify-content: space-evenly;
-        padding: 0;
+        padding: 10px 0 0;
     }
     .carPark,
     .prise{
@@ -761,6 +779,7 @@ body{
     .reviews__content{
         flex-direction: column;
         align-items: center;
+        padding-bottom: 20px;
     }
     .reviws__item{
         padding-bottom: 30px;
@@ -769,11 +788,16 @@ body{
         font-size: 24px;
         line-height: 28px;
     }
+    /* .ymaps-2-1-78-map ymaps, .ymaps-2-1-78-map ymaps:after, .ymaps-2-1-78-map ymaps:before{
+        display: none;
+    } */
 }
 
 
 
 @media (max-width: 510px){
+
+
     .logo__link{
         width: 75%;
         vertical-align: middle;
@@ -797,13 +821,14 @@ body{
     .happen__item{
         padding: 0 0 25px 80px;
         height: 88px;
-        width: 100%;
+        width: 80%;
     }
     .happen__item-title{
         font-size: 16px;
     }
     .truck__title{
         font-size: 24px;
+        padding-bottom: 0;
     }
     .happen__item-text{
         display: none;
@@ -824,7 +849,7 @@ body{
         padding: 20px 0;
     }
     .reviews__title{
-        padding-top: 0;
+        padding: 0 0 50px;
     }
     .reviews__btn{
         margin-bottom: 0;
@@ -836,6 +861,10 @@ body{
     .feedback{
         padding: 50px 0;
     }
+    .feedback__title{
+        width: 300px;
+        margin: 0 auto;
+    }
     .feedback__text{
         padding-top: 15px;
         font-size: 15px;
@@ -846,4 +875,11 @@ body{
     .feedback__btm::after{
         display: none;
     }
+}
+
+.block__hidden{
+    display: none;
+}
+.off{
+    display: none;
 }

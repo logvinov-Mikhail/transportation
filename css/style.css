@@ -254,6 +254,21 @@ body{
     background-color: #ffe15b;
 }
 
+.prise__item--hidden{
+    display: none;
+}
+.prise__item--btn{
+    display: none;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px solid #333;
+    background-color: #fefefe;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
 .carPark{
     padding: 50px 0;
 }
@@ -328,8 +343,15 @@ body{
 }
 .reviews__content{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 60px;
+}
+.reviws__item{
+    width: 30%;
+}
+.reviws__item:nth-child(1n+4){
+    display: none;
 }
 .reviws__item-author{
     font-size: 24px;
@@ -385,6 +407,14 @@ body{
     line-height: 24px;
     cursor: pointer;
     transition: background-color 0.2s ease;
+}
+
+.hidden{
+    display: none;
+    padding-top: 50px;
+}
+.off{
+    display: none;
 }
 
 
@@ -563,6 +593,7 @@ body{
 }
 
 /* АДАПТИВ */
+
 @media (min-width: 1600px){
     .top__photo--van{
         left: 70%;
@@ -597,9 +628,6 @@ body{
         z-index: 5;
     }
     .slick-dots button:hover{
-        /* width: 15px;
-        height: 15px;
-        background-color: transparent;  */
         border: 1px solid #FED100;
         outline: none;
     } 
@@ -615,7 +643,9 @@ body{
     .reviws__item:nth-child(3){
         display: none;
     }
-    
+    .reviws__item{
+        width: auto;
+    }
     .feedback{
         text-align: center;
     }
@@ -675,8 +705,10 @@ body{
         min-width: 300px;
         margin: 50px 10px 0;
     }   
-
-
+    .position__container{
+        position: static;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 860px){
@@ -711,6 +743,9 @@ body{
     .prise__item{
         margin: 25px auto;
         width: 420px;
+    }
+    .prise__content{
+        display: block;
     }
     .happen__inner{
         display: block;
@@ -766,6 +801,9 @@ body{
     .slider__btn{
         margin: 0px auto;
     }
+    .hidden{
+        padding-top: 0;
+    }
 
     .prise__btn,
     .reviews__btn{
@@ -788,12 +826,7 @@ body{
         font-size: 24px;
         line-height: 28px;
     }
-    /* .ymaps-2-1-78-map ymaps, .ymaps-2-1-78-map ymaps:after, .ymaps-2-1-78-map ymaps:before{
-        display: none;
-    } */
 }
-
-
 
 @media (max-width: 510px){
 
@@ -877,9 +910,3 @@ body{
     }
 }
 
-.block__hidden{
-    display: none;
-}
-.off{
-    display: none;
-}

@@ -37,7 +37,7 @@ $(window).resize(function() {
   } else {
     $('.reviws__item:nth-child(2)').removeClass("hidden");
     $('.prise__item:nth-child(1n+2)').removeClass("hidden");
-    $('.prise__item--btn').css("display", "block");
+    $('.prise__item--btn').css("display", "none");
   }
 });
 

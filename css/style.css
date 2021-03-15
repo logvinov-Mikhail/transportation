@@ -370,7 +370,7 @@ body{
     color: #333;
     border-bottom: 1px solid #333;
 }
-.reviews__btn{
+/* .reviews__btn{
     color: #333;
     display: flex;
     margin: 0 auto;
@@ -390,7 +390,7 @@ body{
 .reviews__btn:hover, 
 .reviews__btn:focus {
     background-color: #e6bb00;
-}
+} */
 .reviws__btn--more{
     color: #333;
     display: flex;
@@ -408,6 +408,12 @@ body{
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
+.reviws__btn--more:hover, 
+.reviws__btn--more:focus,
+.off:hover, 
+.off:focus{
+    background-color: #e6bb00;
+}
 
 .hidden{
     display: none;
@@ -416,7 +422,6 @@ body{
 .off{
     display: none;
 }
-
 
 .feedback{
     padding: 100px 0 60px;
@@ -481,7 +486,7 @@ body{
     padding-top: 20px;
     margin-right: 120px; 
 }
-/* проверил */
+
 .position{
     position: relative;
 }
@@ -522,8 +527,14 @@ body{
     height: 14px;
     background-image: url(../images/checkIcon-yellow.svg);
 }
-.social{
-    text-align: end;
+.position .social-list{
+width: 50%;
+margin-left: auto;
+}
+.social-list{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
 }
 
 .footer{
@@ -556,11 +567,6 @@ body{
     color: #333;
     padding-bottom: 10px;
 }
-.footer__social-list{
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-}
 .footer__social-email, .footer__feedback-phone{
     font-size: 20px;
     font-weight: 500;
@@ -591,7 +597,9 @@ body{
 .footer__feedback-btn:focus {
     background-color: #e6bb00;
 }
-
+.footer__prise--btn{
+    display: none;
+}
 /* АДАПТИВ */
 
 @media (min-width: 1600px){
@@ -709,6 +717,36 @@ body{
         position: static;
         margin: 0 auto;
     }
+    .position__container{
+        height: auto;
+    }
+    .position__item-link::after{
+        display: none;
+    }
+    .position__container .logo,
+    .position__container .social-list {
+        display: none;
+    }
+    .footer{
+        padding: 50px 0;
+    }
+    .footer__menu{
+        padding: 40px 0;
+    }
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer__feedback{
+        display: none;
+    }
+    .footer__prise--btn{
+        display: flex;
+        border: 1px solid #333;
+        margin: 35px auto 0;
+    }
+    
 }
 
 @media (max-width: 860px){

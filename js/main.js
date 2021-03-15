@@ -57,3 +57,7 @@ $('.prise__item--btn').click(function(){
   $('.prise__item').css("display", "block");
   $('.prise__item--btn').css("display", "none");
 });
+
+$('.menu__btn').on('click', function(){
+  $('.menu__list').toggleClass('menu__list--active');
+})
